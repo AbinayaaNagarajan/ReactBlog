@@ -17,15 +17,15 @@ function Article() {
   return (
     <main>
       {articles.map((article, index) => (
-        <article key={index}>
+        <div id={index}>
           <h2>{article.title}</h2>
           <img src={article.imageUrl} alt={`Description of Image ${index + 1}`} />
           <p>{article.content}</p>
 
           <p>
-            Continues... <a href="#">Read more</a>
+            Continues... <a href="http://www.google.com">Read more</a>
           </p>
-        </article>
+          </div>
       ))}
     </main>
   );
