@@ -19,7 +19,7 @@ function Article() {
       {articles.map((article, index) => (
         <div id={index}>
           <h2>{article.title}</h2>
-          <img src={article.imageUrl} />
+          <img src={article.imageUrl} alt="" />
           <p>{article.content}</p>
 
           <p>
